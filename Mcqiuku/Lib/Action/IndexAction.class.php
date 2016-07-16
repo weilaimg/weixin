@@ -67,10 +67,11 @@ class IndexAction extends Action {
 				$timeD = date('Y年m月d日',$Ttime);
 				$timeH = date('H:m:s',$Ttime);
 				$timeh = date ('H',$Ttime);
-				if($timeh > 6 && $timeh < 11)
+				if($timeh > 6 && $timeh < 8)
 				{
 					$Msg = '上午好';
 				}
+				else if ($timeh >=8 && )
 				else if ($timeh >= 11 && $timeh <=13)
 				{
 					$Msg = '中午好';
@@ -85,19 +86,19 @@ class IndexAction extends Action {
 				}
 				else
 					$Msg = '大半夜不睡觉出来玩什么微信！';
-				$content = "欢迎关注
-[梅川湫褲·冷]
-官方微信平台
-===============	
+				$content = "	欢迎关注
+	[梅川湫褲·冷]
+	官方微信平台
+	===============	
 			
-现在是:
-$timeD
-北京时间
-$timeH
+	现在是:
+	$timeD
+	北京时间
+	$timeH
 
-===============
-$Msg
-";
+	===============
+	$Msg
+	";
 
 
 
