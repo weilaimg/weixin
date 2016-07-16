@@ -70,13 +70,13 @@ class IndexAction extends Action {
 
 				/**
 				 * 回复事件推送格式
-				 	<xml>
-					<ToUserName><![CDATA[toUser]]></ToUserName>
-					<FromUserName><![CDATA[FromUser]]></FromUserName>
-					<CreateTime>123456789</CreateTime>
-					<MsgType><![CDATA[event]]></MsgType>
-					<Event><![CDATA[subscribe]]></Event>
-					</xml>
+			 	<xml>
+				<ToUserName><![CDATA[toUser]]></ToUserName>
+				<FromUserName><![CDATA[fromUser]]></FromUserName>
+				<CreateTime>12345678</CreateTime>
+				<MsgType><![CDATA[text]]></MsgType>
+				<Content><![CDATA[你好]]></Content>
+				</xml>
 				 */
 
 
@@ -85,7 +85,7 @@ class IndexAction extends Action {
 				<FromUserName><![CDATA[%s]]></FromUserName>
 				<CreateTime>%s</CreateTime>
 				<MsgType><![CDATA[%s]]></MsgType>
-				<Event><![CDATA[%s]]></Event>
+				<Content><![CDATA[%s]]></Content>
 				</xml>';
 
 
