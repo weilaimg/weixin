@@ -81,7 +81,7 @@ class IndexAction extends Action {
 				}
 				else if ($timeh >=18 && $timeh <= 23 )
 				{
-					$Msg = '晚上好'；
+					$Msg = '晚上好';
 				}
 				else
 					$Msg = '大半夜不睡觉出来玩什么微信！';
