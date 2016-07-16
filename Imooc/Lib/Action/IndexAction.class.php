@@ -60,7 +60,7 @@ class IndexAction extends Action {
 			{
 				//回复用户消息
 				$toUser = $postObj -> FromUserName;
-				$fromUser = $opstObj -> ToUserName;
+				$fromUser = $postObj -> ToUserName;
 				$time = time();
 				$msgType = 'text';
 				$content = 'Hello guys!' ;
