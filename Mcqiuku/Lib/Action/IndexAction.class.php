@@ -7,8 +7,8 @@ class IndexAction extends Action {
     	
 
 
-    	//1.获得参数singature nonce token timestamp echostr
-    	$singature		= $_GET['singature'];
+    	//1.获得参数signature nonce token timestamp echostr
+    	$signature		= $_GET['signature'];
     	$nonce 			= $_GET['nonce'];
     	$token 			= 'mcqiuku';
     	$echostr        = $_GET['echostr'];
@@ -18,11 +18,11 @@ class IndexAction extends Action {
 
 		$arr = array($nonce,$timestamp,$token);
 		sort ($arr);
-		//拼接成字符串，sha1加密，然后与singature进行校验
+		//拼接成字符串，sha1加密，然后与signature进行校验
 		$str = implode('', $arr);
 		$str = sha1($str);
 		
-		if($str == $singature && $echostr)
+		if($str == $signature && $echostr)
 		{
 			//首次微信接入验证
 			echo $echostr;
