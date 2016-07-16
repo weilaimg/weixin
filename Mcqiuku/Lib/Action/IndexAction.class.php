@@ -62,11 +62,28 @@ class IndexAction extends Action {
 			//4.判断推送的事件是否是被添加的事件
 			if(strtolower($postObj -> Event) == 'subscribe' ){
 				//5.设置回复内容
+
+				$time1 = time ();
+	$time1 = date('Y年m月d日 H:m:s',$time);
+$content = "欢迎关注[梅川湫褲·冷]官方微信
+===============
+
+现在的时间是:
+$time1
+
+===============
+
+copyrigth©2016-
+";
+
+
+
+
 				$toUser = $postObj -> FromUserName;
 				$fromUser = $postObj -> ToUserName;
 				$time = time();
 				$msgType = 'text';
-				$content = 'Hello guys';
+			//	$content = 'Hello guys';
 
 				/**
 				 * 回复事件推送格式
