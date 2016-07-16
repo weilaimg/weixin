@@ -65,7 +65,7 @@ class IndexAction extends Action {
 
 				$Ttime = time ();
 				$timeD = date('Y年m月d日',$Ttime);
-				$timeH = date('H:m:s',$Ttime);
+				$timeH = date('H:i:s',$Ttime);
 				$timeh = date ('H',$Ttime);
 				if($timeh > 6 && $timeh < 8)
 				{
