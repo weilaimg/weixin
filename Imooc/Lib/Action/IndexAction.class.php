@@ -81,7 +81,7 @@ class IndexAction extends Action {
 				</xml>
 				*/
 
-				$info = sprintf($template,$toUser,$$fromUser,$time,$mspType,$content);
+				$info = sprintf($template,$toUser,$fromUser,$time,$msgType,$content);
 				echo $info;
 		
 		} 		
