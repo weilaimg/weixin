@@ -71,7 +71,10 @@ class IndexAction extends Action {
 				{
 					$Msg = '上午好';
 				}
-				else if ($timeh >=8 && )
+				else if ($timeh >=8 && $timeh <11)
+				{
+					$Msg = '早上好';
+				}
 				else if ($timeh >= 11 && $timeh <=13)
 				{
 					$Msg = '中午好';
