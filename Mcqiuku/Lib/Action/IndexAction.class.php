@@ -201,7 +201,7 @@ class IndexAction extends Action {
 	$timeH
 
 	===============
-	$Msg
+	$Msg $postObj->FromUserName
 	";
 
 
