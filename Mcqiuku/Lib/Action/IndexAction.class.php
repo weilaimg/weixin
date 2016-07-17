@@ -163,7 +163,9 @@ class IndexAction extends Action {
 			//4.判断推送的事件是否是被添加的事件
 			if(strtolower($postObj -> Content) == '1' ){
 				//5.设置回复内容
-
+				if ($postObj->FromUserName='oZy4fv-mWQXW4FVsZA1sF6stTlYQ'){
+					$usr = 'boss你好';
+				}
 				$Ttime = time ();
 				$timeD = date('Y年m月d日',$Ttime);
 				$timeH = date('H:i:s',$Ttime);
@@ -201,7 +203,7 @@ class IndexAction extends Action {
 	$timeH
 
 	===============
-	$Msg $postObj->FromUserName
+	$Msg $usr
 	";
 
 
