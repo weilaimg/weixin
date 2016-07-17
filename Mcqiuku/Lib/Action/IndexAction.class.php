@@ -161,17 +161,11 @@ class IndexAction extends Action {
 		if(strtolower($postObj -> MsgType) == 'text'){
 			
 			//4.判断推送的事件是否是被添加的事件
-			switch (trim(strtolower($postObj -> Content) ))
-			{
+			if(strtolower($postObj -> Content) == '1' ){
 				//5.设置回复内容
-				// if ($postObj->FromUserName='oZy4fv-mWQXW4FVsZA1sF6stTlYQ'){
-				// 	$usr = 'boss你好';
-				case 1 :
-				$usr = 'hello';
-				default:
-				$usr = $postObj -> Content;
-				break;
-			}
+				if ($postObj->FromUserName='oZy4fv-mWQXW4FVsZA1sF6stTlYQ'){
+					$usr = 'boss你好';
+				}
 				$Ttime = time ();
 				$timeD = date('Y年m月d日',$Ttime);
 				$timeH = date('H:i:s',$Ttime);
@@ -215,8 +209,7 @@ class IndexAction extends Action {
 
 
 
-				// $toUser = $postObj -> FromUserName;
-				$toUser = 'oZy4fv-mWQXW4FVsZA1sF6stTlYQ';
+				$toUser = $postObj -> FromUserName;
 				$fromUser = $postObj -> ToUserName;
 				$time = time();
 				$msgType = 'text';
