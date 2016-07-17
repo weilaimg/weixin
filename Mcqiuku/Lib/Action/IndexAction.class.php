@@ -134,7 +134,7 @@ class IndexAction extends Action {
 
 
 				$info = sprintf($template,$toUser,$fromUser,$time,$msgType,$content);
-				for ($i=0;$i=4;$i++)
+				for ($i=0;$i<4;$i++)
 				echo $info; 
 
 
