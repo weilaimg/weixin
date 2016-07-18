@@ -207,8 +207,7 @@ class IndexAction extends Action {
 	// ";
 
 
-				//$content = $postObj -> FromUserName;
-				$content = '只';
+				$content = $postObj -> FromUserName;
 				$toUser = $postObj -> FromUserName;
 				$fromUser = $postObj -> ToUserName;
 				$time = time();
