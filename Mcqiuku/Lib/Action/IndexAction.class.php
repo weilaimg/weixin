@@ -159,9 +159,9 @@ class IndexAction extends Action {
 		*/
 
 		if(strtolower($postObj -> MsgType) == 'text'){
-			$userinfo = '客官';
+			$userinfo = '尊敬的客官';
 			if ($postObj->FromUserName=='oZy4fvwkaTQ7f5w4KhAw5ro_HYbQ'){
-					$userinfo = '老板娘';
+					$userinfo = '尊敬的老板娘';
 				}
 	 		//if(strtolower($postObj -> Content) == '1' ){
 	// 			//5.设置回复内容
