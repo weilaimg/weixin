@@ -165,7 +165,7 @@ class IndexAction extends Action {
 				}
 	 		//if(strtolower($postObj -> Content) == '1' ){
 	// 			//5.设置回复内容
-		 		else if ($postObj->FromUserName=＝'oZy4fv-mWQXW4FVsZA1sF6stTlYQ'){
+		 		else if ($postObj->FromUserName=='oZy4fv-mWQXW4FVsZA1sF6stTlYQ'){
 	 				$userinfo = '尊敬的boss';
 	 			}
 
