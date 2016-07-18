@@ -160,38 +160,40 @@ class IndexAction extends Action {
 
 		if(strtolower($postObj -> MsgType) == 'text'){
 			
-			
+			if ($postObj->FromUserName='oZy4fvwkaTQ7f5w4KhAw5ro_HYbQ'){
+					$userinfo = '老板娘';
+
 	 		//if(strtolower($postObj -> Content) == '1' ){
 	// 			//5.设置回复内容
 	// 			if ($postObj->FromUserName='oZy4fv-mWQXW4FVsZA1sF6stTlYQ'){
 	// 				$usr = 'boss你好';
 	// 			}
-	// 			$Ttime = time ();
-	// 			$timeD = date('Y年m月d日',$Ttime);
-	// 			$timeH = date('H:i:s',$Ttime);
-	// 			$timeh = date ('H',$Ttime);
-	// 			if($timeh > 6 && $timeh < 8)
-	// 			{
-	// 				$Msg = '上午好';
-	// 			}
-	// 			else if ($timeh >=8 && $timeh <11)
-	// 			{
-	// 				$Msg = '早上好';
-	// 			}
-	// 			else if ($timeh >= 11 && $timeh <=13)
-	// 			{
-	// 				$Msg = '中午好';
-	// 			}
-	// 			else if($timeh >13 && $timeh < 18)
-	// 			{
-	// 				$Msg = '下午好';
-	// 			}
-	// 			else if ($timeh >=18 && $timeh <= 23 )
-	// 			{
-	// 				$Msg = '晚上好';
-	// 			}
-	// 			else
-	// 				$Msg = '大半夜不睡觉出来玩什么微信！';
+				$Ttime = time ();
+				$timeD = date('Y年m月d日',$Ttime);
+				$timeH = date('H:i:s',$Ttime);
+				$timeh = date ('H',$Ttime);
+				if($timeh > 6 && $timeh < 8)
+				{
+					$Msg = '上午好';
+				}
+				else if ($timeh >=8 && $timeh <11)
+				{
+					$Msg = '早上好';
+				}
+				else if ($timeh >= 11 && $timeh <=13)
+				{
+					$Msg = '中午好';
+				}
+				else if($timeh >13 && $timeh < 18)
+				{
+					$Msg = '下午好';
+				}
+				else if ($timeh >=18 && $timeh <= 23 )
+				{
+					$Msg = '晚上好';
+				}
+				else
+					$Msg = '大半夜不睡觉出来玩什么微信！';
 	// 			$content = "	欢迎关注
 	// [梅川湫褲·冷]
 	// 官方微信平台
@@ -205,9 +207,9 @@ class IndexAction extends Action {
 	// ===============
 	// $Msg $usr
 	// ";
+}
 
-
-				$content = $postObj -> FromUserName;
+				$content = $userinfo.'  '.$Msg;
 				$toUser = $postObj -> FromUserName;
 				$fromUser = $postObj -> ToUserName;
 				$time = time();
