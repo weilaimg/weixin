@@ -162,12 +162,13 @@ class IndexAction extends Action {
 			
 			if ($postObj->FromUserName='oZy4fvwkaTQ7f5w4KhAw5ro_HYbQ'){
 					$userinfo = '老板娘';
-
+				}
 	 		//if(strtolower($postObj -> Content) == '1' ){
 	// 			//5.设置回复内容
-	// 			if ($postObj->FromUserName='oZy4fv-mWQXW4FVsZA1sF6stTlYQ'){
-	// 				$usr = 'boss你好';
-	// 			}
+		 		else if ($postObj->FromUserName='oZy4fv-mWQXW4FVsZA1sF6stTlYQ'){
+	 				$userinfo = '尊敬的boss';
+	 			}
+	 			else $userinfo = '客官';
 				$Ttime = time ();
 				$timeD = date('Y年m月d日',$Ttime);
 				$timeH = date('H:i:s',$Ttime);
@@ -207,7 +208,7 @@ class IndexAction extends Action {
 	// ===============
 	// $Msg $usr
 	// ";
-}
+
 
 				$content = $userinfo.'  '.$Msg;
 				$toUser = $postObj -> FromUserName;
