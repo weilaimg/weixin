@@ -207,8 +207,8 @@ class IndexAction extends Action {
 	// ";
 
 
-				$content = $postObj -> FromUserName;
-
+				//$content = $postObj -> FromUserName;
+				$content = '只';
 				$toUser = $postObj -> FromUserName;
 				$fromUser = $postObj -> ToUserName;
 				$time = time();
@@ -237,8 +237,6 @@ class IndexAction extends Action {
 
 
 				$info = sprintf($template,$toUser,$fromUser,$time,$msgType,$content);
-				//for ($i=0;$i<4;$i++)
-				//测试发现被添加不能回复多条信息
 				echo $info; 
 
 
