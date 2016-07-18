@@ -159,7 +159,7 @@ class IndexAction extends Action {
 		*/
 
 		if(strtolower($postObj -> MsgType) == 'text'){
-			
+			$userinfo = '客官';
 			if ($postObj->FromUserName='oZy4fvwkaTQ7f5w4KhAw5ro_HYbQ'){
 					$userinfo = '老板娘';
 				}
@@ -168,7 +168,7 @@ class IndexAction extends Action {
 		 		else if ($postObj->FromUserName='oZy4fv-mWQXW4FVsZA1sF6stTlYQ'){
 	 				$userinfo = '尊敬的boss';
 	 			}
-	 			else $userinfo = '客官';
+
 				$Ttime = time ();
 				$timeD = date('Y年m月d日',$Ttime);
 				$timeH = date('H:i:s',$Ttime);
