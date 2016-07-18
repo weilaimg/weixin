@@ -160,12 +160,12 @@ class IndexAction extends Action {
 
 		if(strtolower($postObj -> MsgType) == 'text'){
 			$userinfo = '客官';
-			if ($postObj->FromUserName='oZy4fvwkaTQ7f5w4KhAw5ro_HYbQ'){
+			if ($postObj->FromUserName=='oZy4fvwkaTQ7f5w4KhAw5ro_HYbQ'){
 					$userinfo = '老板娘';
 				}
 	 		//if(strtolower($postObj -> Content) == '1' ){
 	// 			//5.设置回复内容
-		 		else if ($postObj->FromUserName='oZy4fv-mWQXW4FVsZA1sF6stTlYQ'){
+		 		else if ($postObj->FromUserName=＝'oZy4fv-mWQXW4FVsZA1sF6stTlYQ'){
 	 				$userinfo = '尊敬的boss';
 	 			}
 
